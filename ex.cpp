@@ -34,10 +34,12 @@ void ex::sell(const currency::transfer &transfer) {
 
   auto quantity = asset(transfer.quantity.amount, LTS_SYMBOL);
 
+  /*
   action(permission_level{_self, N(active)}, N(ltsonenumivo), N(transfer),
          std::make_tuple(_self, to, quantity,
                          std::string("ELN to LTS")))
       .send();
+  */    
 
 }
 
